@@ -1,11 +1,13 @@
 #side{
 	float : left;
-	background-color: ffd5ec;
+	font-color : ffffff;
+	background-color: #ff3366;
+	
 }
 #main{
 	float : left;
 }
 #bottom{
 	clear : both;
-	background-color: ff367f;
+	background-color: #ff367f;
 }
