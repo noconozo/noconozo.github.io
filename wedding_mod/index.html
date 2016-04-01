@@ -5,16 +5,69 @@
   <title>Happy Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript"><!--
+function ChangeTab(tabname) {
+   // 全部消す
+   document.getElementById('INTRODUCTION').style.display = 'none';
+   document.getElementById('ABOUT').style.display = 'none';
+   document.getElementById('ACCESS').style.display = 'none';
+   document.getElementById('PICTURE').style.display = 'none';
+   // 指定箇所のみ表示
+   document.getElementById(tabname).style.display = 'block';
+}
+// --></script>
 </head>
 <body>
+
+	<div class="tabbox">
+	 	<p class="tab_top">
+	 		<a href="#INTRODUCTION" class="tab1" onclick="ChangeTab('INTRODUCTION'); return false;">INTRODUCTION</a>
+	 		<a href="#ABOUT" class="tab2" onclick="ChangeTab('ABOUT'); return false;">ABOUT</a>
+	 		<a href="#ACCESS" class="tab3" onclick="ChangeTab('ACCESS'); return false;">ACCESS</a>
+	 		<a href="#PICTURE" class="tab4" onclick="ChangeTab('PICTURE'); return false;">PICTURE</a>
+		</p>
+	<div id="INTRODUCTION" class="tab">
+		<p>(タブ1の中身。何でも記述できます。)</p>
+	</div>
+	<div id="ABOUT" class="tab">
+	 	<p>(タブ2の中身。HTMLタグも記述可能です。)</p>
+	</div>
+	<div id="ACCESS" class="tab">
+		<p>(タブ3の中身。いくつでも増やせます。)</p>
+	</div>
+	<div id="PICTURE" class="tab">
+		<p>(タブ3の中身。いくつでも増やせます。)</p>
+	</div>
+	</div>
+
+<!--
 	<div id="side">
-		<ul class="sideMenu">
-		    <li><a href="/INTRODUCTION/" style="color:#0000ff;text-decoration:none">INTRODUCTION</a></li>
-		    <li><a href="/ABOUT/" style="color:#0000ff;text-decoration:none">ABOUT</a></li>
-		    <li><a href="/ACCESS/" style="color:#0000ff;text-decoration:none">ACCESS</a></li>
-		    <li><a href="/PICTURE/" style="color:#0000ff;text-decoration:none">PICTURE</a></li>
+		<ul style="list-style:none;">
+		    <li><a href="#INTRODUCTION" style="color:#ffffff;text-decoration:none">INTRODUCTION</a></li>
+		    <li><a href="#ABOUT" style="color:#ffffff;text-decoration:none">ABOUT</a></li>
+		    <li><a href="#ACCESS" style="color:#ffffff;text-decoration:none">ACCESS</a></li>
+		    <li><a href="#PICTURE" style="color:#ffffff;text-decoration:none">PICTURE</a></li>
 		</ul>  
 	</div>
-	<div id="main">メイン部</div>
+	<div id="main">メイン部
+		<div id="INTRODUCTION">
+			自己紹介<br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div id="ABOUT">
+			こんな式ですよ<br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div id="ACCESS">
+			地図<br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div id="PICTURE">
+			写真はこちら<br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+	</div>
+-->
 	<div id="bottom">フッター</div></body>
+	
+	<script type="text/javascript"><!--
+   // デフォルトのタブを選択
+   ChangeTab('INTRODUCTION');
+// --></script>
 </html>

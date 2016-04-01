@@ -1,13 +1,84 @@
+div.tabbox{
+	margin: 0px;
+	padding: 0px;
+	width: 400px;
+}
+p.tab_top{
+	margin: 0px;
+	padding: 0px;
+}
+p.tab_top a {
+   display: block;
+	width: 5em;
+	float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+/* タブの配色 */
+p.tab_top a.tab1{
+	background-color: blue;
+	color: white;
+}
+p.tab_top a.tab2{
+	background-color: #aaaa00;
+	color:white;
+}
+p.tab_top a.tab3{
+	background-color: red;
+	color: white;
+}
+p.tab_top a.tab4{
+	background-color: red;
+	color: white;
+}
+p.tab_top a:hover{
+	color: yellow;
+}
+
+/* 各ページの内容 */
+div.tab {
+   height: 150px; overflow: auto; clear: left;
+}
+div#INTRODUCTION{
+	border: 2px solid blue;
+	background-color: #ccffff;
+}
+div#ABOUT{
+	border: 2px solid #aaaa00;
+	background-color: #ffffcc;
+}
+div#ACCESS{
+	border: 2px solid red;
+	background-color: #ffcccc;
+}
+div#PICTURE{
+	border: 2px solid red;
+	background-color: #ffcccc;
+}
+div.tab p { margin: 0.5em; }
+
+
+
+
 #side{
 	float : left;
-	font-color : ffffff;
-	background-color: #ff3366;
+	font-color : #FFFFFF;
+	background-color: #FF3366;
+	font-family : "Century Gothic";
 	
 }
 #main{
 	float : left;
 }
+
+
+
+
+
+
 #bottom{
 	clear : both;
-	background-color: #ff367f;
-}
+	background-color: #CCFF99;
+	font-family : "Century Gothic";
+}s
