@@ -1,3 +1,11 @@
-#side{float:left;}
-#main{float:left;}
-#bottom{clear:both;}
+#side{
+	float : left;
+	background-color: ffd5ec;
+}
+#main{
+	float : left;
+}
+#bottom{
+	clear : both;
+	background-color: ff367f;
+}
