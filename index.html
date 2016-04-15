@@ -2,43 +2,82 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <title>noconozo.github.io</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+	<meta charset="UTF-8">
+	<title>noconozo.github.io</title>
+//	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript"><!--
+		function ChangeTab(tabname) {
+			// 全部消す
+			document.getElementById('profile').style.display = 'none';
+			document.getElementById('skills').style.display = 'none';
+			document.getElementById('activity').style.display = 'none';
+			document.getElementById('contact').style.display = 'none';
+			// 指定箇所のみ表示
+			document.getElementById(tabname).style.display = 'block';
+		}
+	// --></script>
 </head>
 
 <body>
-  <!-->
-  <div id="home" data-3500="top:0px;" data-3510="top:-1%;" data-5200="top:-100%;">
-    
-    <div class="side">
-      <dl>
-        <dt>OPEN FILES</dt>
-        <dd><a href="#about">about</a></dd>
-        <dd><a href="#skills">skills</a></dd>
-      </dl>
-    </div>
-    <-->
-    
-    <div id="about">
-    <h2>ABOUT</h2>
-    <div class="wrap">
-      <div class="image"><img src="img/profile.jpg" alt="noconozo"></div>
-      <div class="textbox">
-        <div class="text" data-8500="opacity:1;z-index:10;" data-8800="opacity:0;z-index:0;">
-          <h3>noconozo　--Nozomi H</h3>
-          <p>
-          一度は営業職に転職するもコードが書きたくて出戻ってきたＳＥ。<br>
-          <br>
-          サーバーサイドを少しかじったものの、顧客折衝に回されることがほとんどだったので<br>
-          経験年数とコーディング能力に深～～～い溝がある。<br>
-          <br>
-          育休中を利用してコーディングをイチから勉強中。<br>
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
+<!-- ヘッダ -->
+<div id="header"><h1><a href="index.html">ｗｈａｔ’ｓ　ｎｏｃｏｎｏｚｏ</a></h1></div>
 
-  </body>
+<!-- メイン -->
+<div id="main">
+	<!-- 左メニュー -->
+	<div id="submenu">
+		<div id="submenu_header">CONTENTS</div>
+		<ul id="submenu_body">
+			<li><a href="#profile" onclick="ChangeTab('profile'); return false;">profile</a></li>
+			<li><a href="#skills" onclick="ChangeTab('skills'); return false;">skills</a></li>
+			<li><a href="#activity" onclick="ChangeTab('activity'); return false;">activity</a></li>
+			<li><a href="#contact" onclick="ChangeTab('contact'); return false;">contact</a></li>
+		</ul>
+	</div>
+
+	<!-- コンテンツ -->
+	<div id="content">
+		<div id="profile">
+			<div id="title">profile -プロフィール</div>
+			<div id="text">
+				２７歳。<hr/>ＳＥ歴トータル４年（現在育児休暇中）
+			</div>
+		</div>
+		<div id="skills">
+			<div id="title">skills -スキル</div>
+			<div id="text">
+				サーバーサイドをメインでやってた。<hr/>フロント絶賛勉強中。
+			</div>
+		</div>
+		<div id="activity">
+			<div id="title">activity -活動</div>
+			<div id="text">
+				SIerでＳＥとして勤務。顧客折衝がメイン<hr/>
+				↓<hr/>
+				忙殺されてリタイヤ。不動産業界の営業に<hr/>
+				↓<hr/>
+				やっぱりコーディングが恋しくてＳＥ復活。技術派遣員として建設系や運送業界のシステム保守。<hr/>
+				↓<hr/>
+				出産・育児のため休業中。
+			</div>
+		</div>
+
+		<div id="contact">
+			<div id="title">contact -連絡先</div>
+			<div id="text">
+				ただいま準備中。
+			</div>
+		</div>
+	</div>
+</div> <!-- メイン -->
+
+<!-- フッタ -->
+<div id="footer">Thanks for visited!  …noconozo</div>
+
+<script type="text/javascript"><!--
+  // デフォルトのタブを選択
+  ChangeTab('profile');
+// --></script>
+
+</body>
+</html>
